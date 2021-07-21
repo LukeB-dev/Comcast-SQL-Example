@@ -35,5 +35,5 @@ INNER JOIN dbo.Services as ser
 INNER JOIN dbo.Population_Zip as zip
 	ON tc.[Zip Code] = zip.[Zip Code]
 
--- Filtering data 
+-- Sorting data 
 ORDER BY [Zip Code] ASC, ser.[Total Revenue] DESC
