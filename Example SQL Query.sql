@@ -2,7 +2,7 @@
 -- Leadership would like to identify trends among customers that unsubscribed from our telecom services. 
 
 --Information on the datasets
--- Data is spread across four tables inside the Customer Churn database of a fictional Telecom company in California.
+-- Data are spread across four tables inside the Customer Churn database of a fictional Telecom company in California.
 -- The dataset belongs to IBM and is publicly available on Kaggle and the IBM Analytics Community page
 -- Link:https://www.kaggle.com/ylchang/telco-customer-churn-1113
 
