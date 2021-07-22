@@ -1,7 +1,7 @@
 -- BUSINESS PROBLEM:
 -- Leadership would like to identify trends among customers that unsubscribed from our telecom services. 
 
--- Information on the datasets
+--Information on the datasets
 -- Data are spread across four tables inside the Customer Churn database of a fictional Telecom company in California.
 -- The dataset belongs to IBM and is publicly available on Kaggle and the IBM Analytics Community page
 -- Link:https://www.kaggle.com/ylchang/telco-customer-churn-1113
@@ -27,12 +27,12 @@ SELECT
 
 -- JOINING and ALIASING relevant tables
 FROM
-	Telco_Churn as tc
-INNER JOIN dbo.Demographics as dem
+	Telcom.dbo.Telco_Churn as tc 
+INNER JOIN Telcom.dbo.Demographics as dem
 	ON tc.CustomerID = dem.[Customer ID]
-INNER JOIN dbo.Services as ser
+INNER JOIN Telcom.dbo.Services as ser
 	ON tc.CustomerID = ser.[Customer ID]
-INNER JOIN dbo.Population_Zip as zip
+INNER JOIN Telcom.dbo.Population_Zip as zip
 	ON tc.[Zip Code] = zip.[Zip Code]
 
 --Filtering out anomalous geo values
